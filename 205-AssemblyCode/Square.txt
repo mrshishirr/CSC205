@@ -1,0 +1,24 @@
+
+//Assembly code to get square value of a number
+         |                            
+         |          ORG 001            
+001 5000 |          INPUT              
+002 200A |          STORE 00A          
+003 200C |          STORE 00C          
+         |                            
+004 100A |  process LOAD 00A           
+005 300A |          ADD 00A            
+006 200A |          STORE 00A          
+         |                            
+007 100C |          LOAD 00C           
+008 400F |          SUBT counter       
+009 200C |          STORE 00C          
+         |                            
+00A 8400 |          SKIPCOND 400       
+00B 9004 |          JUMP process       
+         |                            
+00C 100C |          LOAD 00C           
+00D 6000 |          OUTPUT             
+00E 7000 |          HALT               
+         |                            
+00F 0001 |  counter HEX 001 
