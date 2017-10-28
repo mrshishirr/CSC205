@@ -1,0 +1,10 @@
+Load X
+MoveOut R0
+Load Y
+MoveOut R1
+Add R0, R1
+MoveOut R0
+Output R0
+Halt
+X: 5
+Y: -3
